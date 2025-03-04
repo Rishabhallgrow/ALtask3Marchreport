@@ -1,8 +1,8 @@
 report 50100 "Sales orders"
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './SalesOrder.rdl';
-    Caption = 'Sales Order';
+    RDLCLayout = './SalesOrder1.rdl';
+    Caption = 'Sales Order_RP';
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
 

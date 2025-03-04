@@ -9,7 +9,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.0.20283.0</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-03-04T07:18:53.1570758Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-03-04T07:55:21.3988637Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -19,9 +19,28 @@
         <ConnectString />
       </ConnectionProperties>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>31b6c62e-8114-49cd-b103-191ae724fad3</rd:DataSourceID>
+      <rd:DataSourceID>71bc858b-e14f-4685-aff8-d41044c691ac</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="SelltoCustomerNo_SalesHeader">
+          <DataField>SelltoCustomerNo_SalesHeader</DataField>
+        </Field>
+        <Field Name="SelltoCustomerName_SalesHeader">
+          <DataField>SelltoCustomerName_SalesHeader</DataField>
+        </Field>
+        <Field Name="No_">
+          <DataField>No_</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -30,13 +49,13 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.8in</Width>
+                  <Width>1.31667in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.4in</Width>
+                  <Width>2.65in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.42735in</Width>
+                  <Width>4.13963in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -85,7 +104,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Customer No </Value>
+                                  <Value>Customer No</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -259,10 +278,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0.23833in</Top>
-            <Left>0.24667in</Left>
+            <Top>0in</Top>
+            <Left>0in</Left>
             <Height>0.5in</Height>
-            <Width>7.62735in</Width>
+            <Width>8.1063in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -270,10 +289,10 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.96851cm</Height>
+        <Height>1.27cm</Height>
         <Style />
       </Body>
-      <Width>20.00001cm</Width>
+      <Width>20.59cm</Width>
       <Page>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>
@@ -286,6 +305,12 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -325,23 +350,4 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="SelltoCustomerNo_SalesHeader">
-          <DataField>SelltoCustomerNo_SalesHeader</DataField>
-        </Field>
-        <Field Name="SelltoCustomerName_SalesHeader">
-          <DataField>SelltoCustomerName_SalesHeader</DataField>
-        </Field>
-        <Field Name="No_">
-          <DataField>No_</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
